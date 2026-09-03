@@ -3,12 +3,427 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>11LEVEN — Test</title>
+    <title>11LEVEN — 11 Years - Still in the game</title>
+    <meta name="description" content="11LEVEN — 11 Years - Still in the game. Undicesimo anniversario di CrossFit Farnese.">
+    <link rel="icon" href="11leven-favicon-assets/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="16x16" href="11leven-favicon-assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="11leven-favicon-assets/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="11leven-favicon-assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="#" aria-label="11LEVEN — CrossFit Farnese">
+                <img src="Logo-Base.png" alt="11LEVEN">
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#event">THE EVENT</a></li>
+                    <li><a href="#wod">THE WOD</a></li>
+                    <li><a href="#experience">THE EXPERIENCE</a></li>
+                    <li><a href="#where">WHERE &amp; WHEN</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li class="nav-cta-item"><a class="btn btn-primary" href="#join" data-open-modal>JOIN THE PARTY</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <main>
-        <h1>11LEVEN TEST</h1>
-        <p>Aruba hosting: OK</p>
+        <section class="hero" aria-label="Hero">
+            <div class="hero-spray" aria-hidden="true">
+                <img src="spray.png" alt="">
+            </div>
+
+            <div class="hero-content">
+                <p class="hero-eyebrow">CROSSFIT FARNESE PRESENTA</p>
+                <img class="hero-logo" src="Logo-Base.png" alt="11LEVEN — 11 Years - Still in the game">
+                <p class="hero-payoff">11 Years - Still in the game</p>
+                <p class="hero-date text-gradient">12.09.2026</p>
+                <p class="hero-location">CROSSFIT FARNESE · PIACENZA · 12 SETTEMBRE 2026</p>
+
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#join" data-open-modal>JOIN THE PARTY</a>
+                    <a class="btn btn-ghost" href="#event">SCOPRI L'EVENTO</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section event" id="event">
+            <div class="section-inner">
+                <h2 class="section-title">11 ANNI.<span>UNA COMUNITÀ.</span></h2>
+                <div class="section-copy">
+                    <p>11 anni di allenamenti.</p>
+                    <p>11 anni di alzatacce, carichi pesanti, prime trazioni, PR, fallimenti, amicizie e persone che hanno continuato a presentarsi.</p>
+                    <p><strong class="brand-name">11LEVEN</strong> è il nostro modo di festeggiare tutto questo.</p>
+                    <p>Non è una gara.</p>
+                    <p>Non è una cerimonia.</p>
+                    <p>È semplicemente CrossFit Farnese che fa quello che sa fare meglio:</p>
+                    <p>stare insieme, allenarsi forte e divertirsi.</p>
+                </div>
+
+                <a class="btn btn-primary section-cta" href="#join" data-open-modal>JOIN THE PARTY</a>
+            </div>
+
+            <div class="big-number" aria-hidden="true">11</div>
+        </section>
+
+        <section class="section wod" id="wod">
+            <div class="section-inner">
+                <p class="section-label">THE COLOR WOD</p>
+                <h2 class="section-title">UN TEAM WOD.<span>TUTTO A COLORI.</span></h2>
+
+                <div class="section-copy wod-intro">
+                    <p>Stiamo preparando un workout lungo, da vivere insieme e in squadra.</p>
+                    <p>Non serve arrivare con un team già formato: le squadre si formeranno direttamente sul posto.</p>
+                    <p>Prima ci scaldiamo insieme, poi si parte.</p>
+                </div>
+
+                <div class="wod-cards">
+                    <article class="wod-card">
+                        <span class="wod-card-number" aria-hidden="true">01</span>
+                        <h3 class="wod-card-title">TEAM WOD</h3>
+                        <p class="wod-card-copy">Si parte in squadra.</p>
+                    </article>
+
+                    <article class="wod-card">
+                        <span class="wod-card-number" aria-hidden="true">02</span>
+                        <h3 class="wod-card-title">COLOR EXPLOSION</h3>
+                        <p class="wod-card-copy">Il workout si ferma. Il colore entra in scena.</p>
+                    </article>
+
+                    <article class="wod-card">
+                        <span class="wod-card-number" aria-hidden="true">03</span>
+                        <h3 class="wod-card-title">MEGA EXPLOSION</h3>
+                        <p class="wod-card-copy">Il WOD finisce. La festa esplode.</p>
+                    </article>
+                </div>
+
+                <div class="wod-flow" aria-label="Flusso del Color WOD">
+                    <span class="wod-flow-step">TEAM WOD</span>
+                    <span class="wod-flow-arrow" aria-hidden="true">↓</span>
+                    <span class="wod-flow-step">SI ALLENA</span>
+                    <span class="wod-flow-arrow" aria-hidden="true">↓</span>
+                    <span class="wod-flow-step">COLOR EXPLOSION</span>
+                    <span class="wod-flow-arrow" aria-hidden="true">↓</span>
+                    <span class="wod-flow-step">SI RIPARTE</span>
+                    <span class="wod-flow-arrow" aria-hidden="true">↓</span>
+                    <span class="wod-flow-step">COLOR EXPLOSION</span>
+                    <span class="wod-flow-arrow" aria-hidden="true">↓</span>
+                    <span class="wod-flow-step">SI RIPARTE</span>
+                    <span class="wod-flow-arrow" aria-hidden="true">↓</span>
+                    <span class="wod-flow-step">MEGA EXPLOSION</span>
+                </div>
+
+                <div class="color-callout">
+                    <h3 class="color-callout-title">
+                        <span>IL COLORE SPORCA</span>
+                        <span>E CI PIACE.</span>
+                    </h3>
+                    <p>Useremo Holi Color atossici, pensati per essere utilizzati durante questo tipo di esperienza.</p>
+                    <p>Ma non prendiamoci in giro: il colore sporca.</p>
+                    <p>Vieni pronto a sudare, divertirti e sporcarti con noi.</p>
+                </div>
+
+                <div class="guest-callout">
+                    <h3 class="guest-callout-title">NON TI ALLENI?</h3>
+                    <p class="guest-callout-subtitle">PUOI SPORCARTI LO STESSO.</p>
+                    <p>Anche i GUEST possono partecipare alle COLOR EXPLOSION e vivere il momento insieme a noi.</p>
+                    <p>Devono registrarsi perché fanno parte dell'evento e, se confermati, ricevono una T-shirt fino a esaurimento scorte.</p>
+                </div>
+
+                <a class="btn btn-primary section-cta" href="#join" data-open-modal>JOIN THE PARTY</a>
+            </div>
+        </section>
+
+        <section class="section experience" id="experience">
+            <div class="section-inner">
+                <h2 class="section-title">LA GIORNATA</h2>
+
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <span class="timeline-number text-gradient">01</span>
+                        <div class="timeline-body">
+                            <p class="time">17:00</p>
+                            <h4>ARRIVO</h4>
+                            <p>"Si arriva, ci si registra, si ritira la maglia e ci si saluta."</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-number text-gradient">02</span>
+                        <div class="timeline-body">
+                            <p class="time">17:30</p>
+                            <h4>WARM-UP + BRIEFING</h4>
+                            <p>"Ci scaldiamo insieme, spieghiamo il workout e formiamo le squadre."</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-number text-gradient">03</span>
+                        <div class="timeline-body">
+                            <p class="time">18:00</p>
+                            <h4>COLOR WOD</h4>
+                            <p>"Un Team WOD lungo, da vivere tutti insieme."</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-number text-gradient">04</span>
+                        <div class="timeline-body">
+                            <p class="time">DURANTE IL WOD</p>
+                            <h4>COLOR EXPLOSION</h4>
+                            <p>"Il workout si ferma. Il colore entra in scena. Poi si riparte."</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-number text-gradient">05</span>
+                        <div class="timeline-body">
+                            <p class="time">FINE WOD</p>
+                            <h4>MEGA EXPLOSION</h4>
+                            <p>"L'ultima esplosione la facciamo tutti insieme."</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-number text-gradient">06</span>
+                        <div class="timeline-body">
+                            <p class="time">DOPO</p>
+                            <h4>PARTY</h4>
+                            <p>"Doccia, cambio, qualcosa da bere, torta, musica e tempo insieme."</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-number text-gradient">07</span>
+                        <div class="timeline-body">
+                            <p class="time">FINCHÉ TI VA</p>
+                            <h4>STAY</h4>
+                            <p>"Non abbiamo organizzato una cena. Se più tardi ci viene fame, ordiniamo delle pizze e mangiamo insieme. Se vuoi restare, sei il benvenuto."</p>
+                        </div>
+                    </article>
+                </div>
+
+                <a class="btn btn-primary section-cta" href="#join" data-open-modal>JOIN THE PARTY</a>
+            </div>
+        </section>
+
+        <section class="mega" id="mega" aria-label="Mega Explosion">
+            <div class="section-inner">
+                <p class="mega-pretitle">WOD FINITO.</p>
+                <p class="mega-pretitle">FESTA INIZIATA.</p>
+                <h2 class="mega-title">MEGA EXPLOSION</h2>
+                <p class="mega-copy">"Un ultimo momento tutti insieme prima di andare a fare una doccia."</p>
+            </div>
+        </section>
+
+        <section class="section shirt" id="shirt" aria-label="Maglia 11LEVEN">
+            <div class="section-inner">
+                <h2 class="section-title">LA MAGLIA È GRATIS.</h2>
+                <p class="shirt-subtitle">MA DEVI SPORCARTELA CON NOI.</p>
+                <div class="section-copy">
+                    <p>La T-shirt ufficiale <strong class="brand-name">11LEVEN</strong> è il nostro regalo per festeggiare insieme 11 anni di CrossFit Farnese.</p>
+                    <p>Te la regaliamo il 12 settembre, fino a esaurimento scorte.</p>
+                    <p>Ma c'è una condizione: devi venire a sudartela. E soprattutto a sporcartela con noi.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section where" id="where">
+            <div class="section-inner">
+                <h2 class="section-title">DOVE &amp; QUANDO</h2>
+
+                <div class="where-grid">
+                    <div class="date-block">
+                        <span class="date-day">12</span>
+                        <span class="date-month">SETTEMBRE</span>
+                        <span class="date-year">2026</span>
+                    </div>
+
+                    <div class="where-info">
+                        <p class="where-place">CROSSFIT FARNESE</p>
+                        <p class="where-city">PIACENZA</p>
+                    </div>
+
+                    <div class="schedule">
+                        <div class="schedule-item">
+                            <span>17:00</span>
+                            <span>ARRIVO</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span>17:30</span>
+                            <span>WARM-UP + BRIEFING</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span>18:00</span>
+                            <span>COLOR WOD</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span>A SEGUIRE</span>
+                            <span>MEGA EXPLOSION</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span>DALLE 19:00 CIRCA</span>
+                            <span>DRINK · TORTA · MUSICA · PARTY</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="btn btn-primary section-cta" href="#join" data-open-modal>JOIN THE PARTY</a>
+            </div>
+        </section>
+
+        <section class="section faq" id="faq">
+            <div class="section-inner">
+                <h2 class="section-title">FAQ</h2>
+
+                <div class="faq-list">
+                    <details class="faq-item" name="faq">
+                        <summary>DEVO AVERE GIÀ UNA SQUADRA?</summary>
+                        <p>No. È un Team WOD, ma non devi arrivare con una squadra già formata. Le squadre si formeranno direttamente sul posto.</p>
+                    </details>
+
+                    <details class="faq-item" name="faq">
+                        <summary>POSSO PARTECIPARE SE SONO UN GUEST?</summary>
+                        <p>Sì. I GUEST possono partecipare alle Color Explosion e vivere la festa insieme a noi. Devono registrarsi perché fanno parte dell'evento e, se confermati, ricevono la T-shirt fino a esaurimento scorte. Per partecipare al Team WOD è invece necessario essere registrati.</p>
+                    </details>
+
+                    <details class="faq-item" name="faq">
+                        <summary>CHE COS'È IL COLOR WOD?</summary>
+                        <p>È il nostro modo di trasformare il workout in una festa. Si parte con un Team WOD, durante il quale ci saranno momenti di Color Explosion. Il workout si ferma, il colore entra in scena e poi si riparte. Alla fine ci sarà la Mega Explosion.</p>
+                    </details>
+
+                    <details class="faq-item" name="faq">
+                        <summary>I COLORI SONO SICURI?</summary>
+                        <p>Utilizzeremo Holi Color atossici e pensati per questo tipo di utilizzo. Ma attenzione: il colore sporca. Ti consigliamo quindi di indossare qualcosa che non ti dispiaccia sporcare.</p>
+                    </details>
+
+                    <details class="faq-item" name="faq">
+                        <summary>LA MAGLIA È GRATIS?</summary>
+                        <p>Sì. La T-shirt ufficiale <strong class="brand-name">11LEVEN</strong> è il nostro regalo per festeggiare 11 anni di CrossFit Farnese. Sarà disponibile gratuitamente il 12 settembre, fino a esaurimento scorte. Per averla devi essere presente all'evento.</p>
+                    </details>
+
+                    <details class="faq-item" name="faq">
+                        <summary>COSA SUCCEDE DOPO IL WOD?</summary>
+                        <p>Finito il WOD, arriva la Mega Explosion. Poi doccia, cambio, qualcosa da bere, torta, musica e festa. E si resta finché ci va.</p>
+                    </details>
+
+                    <details class="faq-item" name="faq">
+                        <summary>E SE VOGLIO MANGIARE?</summary>
+                        <p>Non abbiamo organizzato una cena. Se più tardi ci viene fame, ordiniamo delle pizze e mangiamo insieme.</p>
+                    </details>
+                </div>
+
+                <a class="btn btn-primary section-cta" href="#join" data-open-modal>JOIN THE PARTY</a>
+            </div>
+        </section>
+
+        <section class="section final-cta" id="join" aria-label="Partecipa">
+            <div class="section-inner">
+                <h2 class="section-title">11 Years - Still in the game</h2>
+                <p class="section-copy">Ci vediamo il 12 settembre.</p>
+                <a class="btn btn-primary" href="#join" data-open-modal>JOIN THE PARTY</a>
+            </div>
+        </section>
     </main>
+
+    <div class="modal" id="registration-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+        <div class="modal-overlay" data-close-modal></div>
+        <div class="modal-panel" role="document">
+            <button class="modal-close" data-close-modal aria-label="Chiudi registrazione">&times;</button>
+            <div class="registration-inner">
+                <h2 class="registration-title" id="modal-title">JOIN THE PARTY</h2>
+                <p class="registration-lead">Registrati per <strong class="brand-name">11LEVEN</strong>.</p>
+
+                <div class="registration-stage">
+                    <form class="registration-form" id="registration-form" novalidate>
+                        <p class="form-message" id="form-message" role="alert" aria-live="polite"></p>
+
+                        <div class="form-row">
+                            <div class="form-group form-group--half">
+                                <label for="first_name">Nome <span aria-hidden="true">*</span></label>
+                                <input type="text" id="first_name" name="first_name" required autocomplete="given-name">
+                            </div>
+                            <div class="form-group form-group--half">
+                                <label for="last_name">Cognome <span aria-hidden="true">*</span></label>
+                                <input type="text" id="last_name" name="last_name" required autocomplete="family-name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email <span aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" required autocomplete="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="shirt_size">Taglia maglia <span aria-hidden="true">*</span></label>
+                            <select id="shirt_size" name="shirt_size" required>
+                                <option value="" disabled selected>Caricamento disponibilità…</option>
+                            </select>
+                            <p class="form-note">La T-shirt ufficiale <strong class="brand-name">11LEVEN</strong> è gratuita il 12 settembre, fino a esaurimento scorte.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="form-label" id="participant-type-label">Tipo di partecipazione <span aria-hidden="true">*</span></span>
+                            <div class="radio-group" role="radiogroup" aria-labelledby="participant-type-label">
+                                <label class="radio-option">
+                                    <input type="radio" name="participant_type" value="athlete" required>
+                                    <span>ATLETA</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="participant_type" value="supporter" required>
+                                    <span>GUEST</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-consent">
+                            <label class="checkbox">
+                                <input type="checkbox" name="privacy_consent" value="yes" required>
+                                <span>Ho letto e accetto l'informativa sulla privacy. <span aria-hidden="true">*</span></span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="participation_consent" value="yes" required>
+                                <span>Accetto il regolamento e le condizioni di partecipazione. <span aria-hidden="true">*</span></span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="marketing_consent" value="yes">
+                                <span>Accetto di ricevere comunicazioni marketing.</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group captcha-group">
+                            <input type="hidden" id="captcha_token" name="captcha_token" value="">
+                            <div id="captcha-container" class="captcha-container"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">REGISTRATI</button>
+                    </form>
+
+                    <div class="registration-result" id="registration-result" aria-live="polite">
+                        <h3 class="registration-result-title" id="result-title"></h3>
+                        <p class="registration-result-subtitle" id="result-subtitle"></p>
+                        <p class="registration-result-status" id="result-status"></p>
+                        <p class="registration-result-tagline" id="result-tagline"></p>
+                        <button type="button" class="btn btn-ghost" id="register-again">REGISTRATI DI NUOVO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onCaptchaLoaded&render=explicit" async defer></script>
 </body>
 </html>
