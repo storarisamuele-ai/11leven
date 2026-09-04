@@ -257,14 +257,19 @@ button {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: min(35vw, 150px);
+    width: 170vw;
+    max-width: none;
+    height: 100%;
     pointer-events: none;
+    overflow: hidden;
 }
 
 .hero-spray img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
 }
 
 .hero-content {
@@ -475,15 +480,21 @@ button {
 
 .wod-flow {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.35rem 0.75rem;
+    gap: 0.5rem;
     margin: 2.5rem 0;
     padding: 1.25rem 1rem;
     background: var(--light-gray);
     border: 1px solid rgba(0, 0, 0, 0.06);
     font-size: 0.75rem;
+}
+
+.wod-flow-step,
+.wod-flow-arrow {
+    width: 100%;
+    text-align: center;
 }
 
 .wod-flow-step {
@@ -895,7 +906,10 @@ body.is-modal-open {
     width: 100%;
     height: 100%;
     max-height: 100vh;
-    background: var(--white);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)), url('registrationbg.jpg');
+    background-size: cover, cover;
+    background-position: center center, center center;
+    background-repeat: no-repeat, no-repeat;
     overflow: hidden;
     padding: 5rem 1.5rem 2rem;
     transform: translateY(20px);
@@ -1217,6 +1231,30 @@ body.is-modal-open {
     .hero-spray {
         right: 0;
         width: min(55vw, 720px);
+        height: auto;
+        overflow: visible;
+    }
+
+    .hero-spray img {
+        height: auto;
+        object-fit: initial;
+        object-position: initial;
+    }
+
+    .wod-flow {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.35rem 0.75rem;
+        align-items: center;
+    }
+
+    .wod-flow-step,
+    .wod-flow-arrow {
+        width: auto;
+    }
+
+    .wod-flow-arrow {
+        transform: rotate(-90deg);
     }
 
     .hero-content {
