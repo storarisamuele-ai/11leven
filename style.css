@@ -705,18 +705,72 @@ button {
 .shirt {
     background: var(--white);
     border-top: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.shirt-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.shirt-content {
+    max-width: 36rem;
+}
+
+.shirt-title {
+    margin-bottom: 1.5rem;
 }
 
 .shirt-subtitle {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-size: clamp(1rem, 2.5vw, 1.35rem);
     font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    line-height: 1.1;
+    line-height: 1.5;
     margin-bottom: 1.5rem;
     color: var(--black);
     overflow-wrap: break-word;
     max-width: 100%;
+}
+
+.shirt-copy {
+    color: var(--gray);
+    margin-bottom: 2rem;
+}
+
+.shirt-copy p + p {
+    margin-top: 0.5rem;
+}
+
+.shirt-image {
+    width: 100%;
+    max-width: 28rem;
+}
+
+.shirt-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1024px) {
+    .shirt-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4rem;
+        text-align: left;
+    }
+
+    .shirt-content {
+        flex: 1 1 45%;
+        max-width: 44%;
+    }
+
+    .shirt-image {
+        flex: 1 1 48%;
+        max-width: 48%;
+    }
 }
 
 /* Where & When */
@@ -1488,4 +1542,199 @@ body.is-modal-open {
     .wod-flow-arrow {
         transform: rotate(-90deg);
     }
+}
+
+/* Section label (used on legal pages) */
+.section-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+/* Checkbox inline link */
+.checkbox-link {
+    color: var(--black);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+    cursor: pointer;
+}
+
+.checkbox-link:hover,
+.checkbox-link:focus {
+    color: var(--gray);
+}
+
+/* Footer */
+.site-footer {
+    background: var(--white);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding: 2rem 1.5rem 5.5rem;
+    text-align: center;
+}
+
+.footer-inner {
+    max-width: 64rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.site-footer p {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin: 0;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.5rem;
+}
+
+.footer-nav a {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--black);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+    color: var(--gray);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+@media (min-width: 768px) {
+    .site-footer {
+        padding: 2.5rem 2.5rem 5rem;
+    }
+
+    .footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+}
+
+/* Back to top */
+.back-to-top {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 50;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--black);
+    color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.25rem;
+    line-height: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease, background 0.2s ease, color 0.2s ease;
+    padding: 0;
+}
+
+.back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.is-modal-open .back-to-top {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+    background: var(--white);
+    color: var(--black);
+}
+
+@media (min-width: 768px) {
+    .back-to-top {
+        width: 3.25rem;
+        height: 3.25rem;
+    }
+}
+
+/* Legal pages */
+.legal {
+    background: var(--white);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.legal .section-title {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.legal .section-copy {
+    max-width: 100%;
+}
+
+.legal-content {
+    max-width: 48rem;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: var(--black);
+}
+
+.legal-content h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 2.5rem 0 1rem;
+    color: var(--black);
+}
+
+.legal-content p {
+    margin-bottom: 1rem;
+    color: var(--gray);
+}
+
+.legal-content ul {
+    margin: 0 0 1rem 1.5rem;
+    color: var(--gray);
+}
+
+.legal-content li {
+    margin-bottom: 0.35rem;
+}
+
+.legal-content a {
+    color: var(--black);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.legal-content a:hover {
+    color: var(--gray);
+}
+
+.legal-meta {
+    font-size: 0.95rem;
+    color: var(--gray);
+    margin-bottom: 2rem;
+    line-height: 1.6;
 }

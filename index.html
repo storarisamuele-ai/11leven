@@ -227,13 +227,19 @@
         </section>
 
         <section class="section shirt" id="shirt" aria-label="Maglia 11LEVEN">
-            <div class="section-inner">
-                <h2 class="section-title">LA MAGLIA È GRATIS.</h2>
-                <p class="shirt-subtitle">MA DEVI SPORCARTELA CON NOI.</p>
-                <div class="section-copy">
-                    <p>La T-shirt ufficiale <strong class="brand-name">11LEVEN</strong> è il nostro regalo per festeggiare insieme 11 anni di CrossFit Farnese.</p>
-                    <p>Te la regaliamo il 12 settembre, fino a esaurimento scorte.</p>
-                    <p>Ma c'è una condizione: devi venire a sudartela. E soprattutto a sporcartela con noi.</p>
+            <div class="section-inner shirt-inner">
+                <div class="shirt-content">
+                    <h2 class="section-title shirt-title">VUOI LA MAGLIA?</h2>
+                    <p class="shirt-subtitle">La T-shirt ufficiale <strong class="brand-name">11LEVEN</strong> è gratuita il 12 settembre, fino a esaurimento scorte.</p>
+                    <div class="section-copy shirt-copy">
+                        <p>Devi venire a sudartela.</p>
+                        <p>Ma soprattutto a sporcartela con noi.</p>
+                    </div>
+                    <a class="btn btn-primary shirt-cta" href="#join" data-open-modal>JOIN THE PARTY</a>
+                </div>
+
+                <div class="shirt-image" aria-hidden="true">
+                    <img src="t-shirt_mockup.jpg" alt="T-shirt ufficiale 11LEVEN">
                 </div>
             </div>
         </section>
@@ -389,11 +395,11 @@
                         <div class="form-group form-consent">
                             <label class="checkbox">
                                 <input type="checkbox" name="privacy_consent" value="yes" required>
-                                <span>Ho letto e accetto l'informativa sulla privacy. <span aria-hidden="true">*</span></span>
+                                <span>HO LETTO E PRESO VISIONE DELL'<a href="privacy.html" target="_blank" rel="noopener" class="checkbox-link" onclick="event.stopPropagation();">INFORMATIVA SULLA PRIVACY</a>. <span aria-hidden="true">*</span></span>
                             </label>
                             <label class="checkbox">
                                 <input type="checkbox" name="participation_consent" value="yes" required>
-                                <span>Accetto il regolamento e le condizioni di partecipazione. <span aria-hidden="true">*</span></span>
+                                <span>ACCETTO IL <a href="regolamento.html" target="_blank" rel="noopener" class="checkbox-link" onclick="event.stopPropagation();">REGOLAMENTO E LE CONDIZIONI DI PARTECIPAZIONE</a>. <span aria-hidden="true">*</span></span>
                             </label>
                             <label class="checkbox">
                                 <input type="checkbox" name="marketing_consent" value="yes">
@@ -420,6 +426,18 @@
             </div>
         </div>
     </div>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 Pesistica Farnese ASD — <strong class="brand-name">11LEVEN</strong></p>
+            <nav class="footer-nav" aria-label="Legal">
+                <a href="privacy.html">Privacy</a>
+                <a href="regolamento.html">Regolamento e condizioni di partecipazione</a>
+            </nav>
+        </div>
+    </footer>
+
+    <button type="button" class="back-to-top" aria-label="Torna in alto" hidden>↑</button>
 
     <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
     <script src="config.js"></script>

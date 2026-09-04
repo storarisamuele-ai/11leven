@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initModal();
     initRegistration();
     initFaq();
+    initBackToTop();
 });
 
 // Demo inventory (mirrors the real Supabase initial stock) and confirmed counter.
@@ -518,4 +519,25 @@ function showResult(status) {
         statusEl.className = 'registration-result-status is-waitlist';
         tagline.textContent = '11 Years - Still in the game';
     }
+}
+
+function initBackToTop() {
+    const button = document.querySelector('.back-to-top');
+    if (!button) return;
+
+    const toggle = () => {
+        if (window.scrollY > 400) {
+            button.hidden = false;
+            button.classList.add('is-visible');
+        } else {
+            button.classList.remove('is-visible');
+        }
+    };
+
+    window.addEventListener('scroll', toggle, { passive: true });
+    toggle();
+
+    button.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 }
