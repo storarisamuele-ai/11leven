@@ -84,6 +84,9 @@ function initModal() {
         modal.hidden = true;
         document.body.classList.remove('is-modal-open');
 
+        const stage = modal.querySelector('.registration-stage.is-success');
+        if (stage) stage.classList.remove('is-success');
+
         if (lastTrigger) lastTrigger.focus();
     }
 }

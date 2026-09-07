@@ -1269,10 +1269,15 @@ body.is-modal-open {
     color: var(--black);
 }
 
-#register-again {
+#register-again,
+#back-to-site {
     min-width: auto;
     padding: 0.7rem 1.25rem;
     font-size: 0.7rem;
+}
+
+#register-again {
+    margin-top: 0.75rem;
 }
 
 /* Tablet */
