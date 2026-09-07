@@ -347,6 +347,11 @@ function isSoldOutError(message) {
            lower.includes('size');
 }
 
+function isDuplicateEmailError(message) {
+    if (!message) return false;
+    return message.toLowerCase().includes('email_already_registered');
+}
+
 function initRegistration() {
     const form = document.getElementById('registration-form');
     const result = document.getElementById('registration-result');
@@ -435,7 +440,13 @@ function initRegistration() {
         } catch (err) {
             console.error(err);
 
-            if (isSoldOutError(err.message)) {
+            if (isDuplicateEmailError(err.message)) {
+                message.innerHTML = '<strong>EMAIL GIÀ REGISTRATA</strong><br>Questa email risulta già registrata a 11LEVEN.<br>Se pensi che ci sia un errore, contattaci a info@crossfitfarnese.com.';
+                if (emailField) {
+                    emailField.classList.add('is-invalid');
+                    emailField.focus();
+                }
+            } else if (isSoldOutError(err.message)) {
                 message.textContent = 'La taglia selezionata è esaurita. Scegli un\'altra taglia.';
                 await loadShirtAvailability();
                 if (shirtSelect) shirtSelect.focus();
